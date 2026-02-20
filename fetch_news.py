@@ -6,7 +6,7 @@ from datetime import datetime
 def fetch():
     api_key = os.environ.get("TIAN_API_KEY")
     # 使用你申请的“体育新闻”接口地址
-    url = f"https://apis.tianapi.com/tiyu/index?key={api_key}&num=50"
+    url = f"https://apis.tianapi.com/tiyu/index?key={api_key}&num=1000"
     
     try:
         response = requests.get(url)
