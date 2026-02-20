@@ -17,7 +17,7 @@ def fetch():
             
             # --- 曼联新闻筛选逻辑 ---
             # 只有标题或描述里包含“曼联”、“Manchester United”或“红魔”才保留
-            keywords = ['曼联', '曼彻斯特联', '红魔', 'Manchester United']
+            keywords = ['曼联', '曼彻斯特联', '红魔', 'Manchester United'，“足球”]
             mu_news = []
             
             for item in all_news:
