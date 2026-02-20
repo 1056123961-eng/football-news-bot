@@ -5,8 +5,8 @@ from datetime import datetime
 
 def fetch():
     api_key = os.environ.get("TIAN_API_KEY")
-    # 请求 100 条体育新闻，扩大基数
-    url = f"https://apis.tianapi.com/tiyu/index?key={api_key}&num=100"
+    # 请求 5000 条体育新闻，扩大基数
+    url = f"https://apis.tianapi.com/tiyu/index?key={api_key}&num=5000"
     
     try:
         response = requests.get(url)
