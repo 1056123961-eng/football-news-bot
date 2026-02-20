@@ -5,48 +5,54 @@ from datetime import datetime
 
 def fetch():
     api_key = os.environ.get("TIAN_API_KEY")
-    # 调试：打印 Key 的前几位（不要全打印，安全第一）
-    if api_key:
-        print(f"API Key found, starts with: {api_key[:5]}...")
-    else:
-        print("Error: TIAN_API_KEY not found in environment!")
-        return
-
-    url = f"https://apis.tianapi.com/worldsoccer/index?key={api_key}&num=30"
+    # 使用你申请的“体育新闻”接口地址
+    url = f"https://apis.tianapi.com/tiyu/index?key={api_key}&num=50"
     
     try:
         response = requests.get(url)
-        print(f"Status Code: {response.status_code}")
         res = response.json()
-        print(f"API Response Code: {res.get('code')}")
         
         if res.get("code") == 200:
-            news_list = res["result"]["newslist"]
-            for item in news_list:
-                title = item['title']
-                if any(kw in title for kw in ['官宣', '达成协议', 'Here we go']):
-                    item['display_tag'] = "🔥重磅"
-                elif any(kw in title for kw in ['亿元', '破纪录', '千万欧']):
-                    item['display_tag'] = "🚨头条"
-                else:
-                    item['display_tag'] = "资讯"
+            all_news = res["result"]["newslist"]
             
-            output = {"last_updated": datetime.now().strftime("%Y-%m-%d %H:%M:%S"), "data": news_list}
-            # 确保文件被写入
+            # --- 曼联新闻筛选逻辑 ---
+            # 只有标题或描述里包含“曼联”、“Manchester United”或“红魔”才保留
+            keywords = ['曼联', '曼彻斯特联', '红魔', 'Manchester United']
+            mu_news = []
+            
+            for item in all_news:
+                # 检查标题或简述是否命中关键词
+                text_to_check = (item['title'] + item['description']).lower()
+                if any(k in text_to_check for k in keywords):
+                    
+                    # 结合 119 版本的高位派发/热点识别逻辑
+                    title = item['title']
+                    if any(kw in title for kw in ['官宣', 'Here we go', '达成协议']):
+                        item['display_tag'] = "🔥重磅"
+                    elif any(kw in title for kw in ['转会', '报价', '挖角']):
+                        item['display_tag'] = "🚨头条"
+                    else:
+                        item['display_tag'] = "资讯"
+                        
+                    mu_news.append(item)
+            
+            # 封装数据
+            output = {
+                "last_updated": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                "count": len(mu_news),
+                "data": mu_news
+            }
+            
             with open("news.json", "w", encoding="utf-8") as f:
                 json.dump(output, f, ensure_ascii=False, indent=2)
-            print("Successfully created news.json")
+            
+            print(f"成功筛选出 {len(mu_news)} 条曼联新闻")
+            
         else:
-            print(f"API Error Message: {res.get('msg')}")
-            # 如果接口报错，我们也生成一个空文件，防止 Git 报错中止
-            with open("news.json", "w", encoding="utf-8") as f:
-                json.dump({"error": "api_error", "msg": res.get('msg')}, f)
-
+            print(f"API报错: {res.get('msg')}")
+            
     except Exception as e:
-        print(f"Python Script Error: {e}")
-        # 出错也生成一个文件，保证 Workflow 能跑完
-        with open("news.json", "w", encoding="utf-8") as f:
-            json.dump({"error": str(e)}, f)
+        print(f"脚本执行错误: {e}")
 
 if __name__ == "__main__":
     fetch()
