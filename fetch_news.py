@@ -5,8 +5,8 @@ from datetime import datetime
 
 def fetch():
     api_key = os.environ.get("TIAN_API_KEY")
-    # 使用你申请的“体育新闻”接口地址
-    url = f"https://apis.tianapi.com/tiyu/index?key={api_key}&num=1000"
+    # 请求 100 条体育新闻，扩大基数
+    url = f"https://apis.tianapi.com/tiyu/index?key={api_key}&num=100"
     
     try:
         response = requests.get(url)
@@ -15,44 +15,44 @@ def fetch():
         if res.get("code") == 200:
             all_news = res["result"]["newslist"]
             
-            # --- 曼联新闻筛选逻辑 ---
-            # 只有标题或描述里包含“曼联”、“Manchester United”或“红魔”才保留
-            keywords = ['曼联', '曼彻斯特联', '红魔', 'Manchester United', '足球']
-            mu_news = []
+            mu_keywords = ['曼联', '红魔', 'Man Utd', 'Manchester United', '阿莫林', 'B费']
+            soccer_keywords = ['足球', '英超', '欧冠', '西甲', '意甲', '德甲', '转会', '豪门']
+            
+            final_list = []
             
             for item in all_news:
-                # 检查标题或简述是否命中关键词
-                text_to_check = (item['title'] + item['description']).lower()
-                if any(k in text_to_check for k in keywords):
-                    
-                    # 结合 119 版本的高位派发/热点识别逻辑
-                    title = item['title']
-                    if any(kw in title for kw in ['官宣', 'Here we go', '达成协议']):
-                        item['display_tag'] = "🔥重磅"
-                    elif any(kw in title for kw in ['转会', '报价', '挖角']):
-                        item['display_tag'] = "🚨头条"
-                    else:
-                        item['display_tag'] = "资讯"
-                        
-                    mu_news.append(item)
+                full_text = (item['title'] + item['description']).lower()
+                
+                # 1. 如果是曼联新闻，打上最高级标签，放入列表
+                if any(k.lower() in full_text for k in mu_keywords):
+                    item['display_tag'] = "🔥重磅"
+                    # 给曼联新闻一个权重排序分
+                    item['priority'] = 1 
+                    final_list.append(item)
+                
+                # 2. 如果不是曼联但含有足球关键词，也保留作为内容填充
+                elif any(k in full_text for k in soccer_keywords):
+                    item['display_tag'] = "资讯"
+                    item['priority'] = 2
+                    final_list.append(item)
             
-            # 封装数据
+            # 按优先级排序：曼联永远在最上面
+            final_list.sort(key=lambda x: x.get('priority', 9))
+
             output = {
                 "last_updated": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-                "count": len(mu_news),
-                "data": mu_news
+                "count": len(final_list),
+                "data": final_list
             }
             
             with open("news.json", "w", encoding="utf-8") as f:
                 json.dump(output, f, ensure_ascii=False, indent=2)
             
-            print(f"成功筛选出 {len(mu_news)} 条曼联新闻")
-            
+            print(f"同步完成，共抓取 {len(final_list)} 条足球/曼联动态")
         else:
-            print(f"API报错: {res.get('msg')}")
-            
+            print(f"API Error: {res.get('msg')}")
     except Exception as e:
-        print(f"脚本执行错误: {e}")
+        print(f"Error: {e}")
 
 if __name__ == "__main__":
     fetch()
