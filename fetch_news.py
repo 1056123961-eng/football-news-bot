@@ -14,8 +14,8 @@ def fetch():
         if res.get("code") == 200:
             all_news = res["result"]["newslist"]
             
-            mu_keywords = ['曼联', '红魔', '阿莫林', 'B费']
-            soccer_keywords = ['足球', '英超', '西甲', '欧冠', '转会', '国足']
+            mu_keywords = ['曼联', '红魔', 'Man Utd', '滕哈格', '阿莫林', 'B费', '拉什福德']
+            soccer_keywords = ['足球', '英超', '欧冠', '转会', '英格兰']
             # 保底关键词：只要是体育，全都要
             insurance_keywords = ['赛', '队', '球', '战', '胜', '负']
             
