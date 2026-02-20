@@ -1,0 +1,27 @@
+name: Hourly News Update
+on:
+  schedule:
+    - cron: '0,30 * * * *'
+  workflow_dispatch:
+jobs:
+  run_bot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+      - name: Install Dependencies
+        run: pip install requests
+      - name: Run Script
+        env:
+          TIAN_API_KEY: ${{ secrets.TIAN_API_KEY }}
+        run: python fetch_news.py
+      - name: Push Json
+        run: |
+          git config --global user.name "NewsBot"
+          git config --global user.email "bot@github.com"
+          git add news.json
+          git commit -m "Auto update" || exit 0
+          git push
