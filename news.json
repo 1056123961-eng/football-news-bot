@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-09 03:57:13",
+  "last_updated": "2026-03-09 05:18:58",
   "count": 8,
   "data": [
     {
@@ -12,6 +12,17 @@
       "url": "https://v.zhibo.tv/detail/headerline/1272914.html",
       "display_tag": "🚨头条",
       "priority": 2
+    },
+    {
+      "id": "06db7c77e66eb4417f502eeb27002fea",
+      "ctime": "2026-03-09 13:00",
+      "title": "VAR越来越精准，球迷却更容易破防？",
+      "description": "",
+      "source": "中国体育",
+      "picUrl": "https://file02.zhibo.tv/uploads/imgs/2026/03-09/c752519bed4beb5c720bbf9743a6dc18_1024x768.jpeg",
+      "url": "https://v.zhibo.tv/detail/headerline/1272925.html",
+      "display_tag": "资讯",
+      "priority": 3
     },
     {
       "id": "a4ecc851d4b306cb01225160e2f9f95e",
@@ -76,17 +87,6 @@
       "source": "中国体育",
       "picUrl": "https://file02.zhibo.tv/uploads/imgs/2026/03-09/3a615bb97faa454306c53fc74c477bcb_540x304.jpg",
       "url": "https://v.zhibo.tv/detail/headerline/1272921.html",
-      "display_tag": "资讯",
-      "priority": 3
-    },
-    {
-      "id": "69b538c381d9c4107cd3cd71bac9b715",
-      "ctime": "2026-03-09 11:00",
-      "title": "WTT重庆冠军赛签表揭晓",
-      "description": "",
-      "source": "中国体育",
-      "picUrl": "https://file02.zhibo.tv/uploads/imgs/2026/03-09/04473abe02609e72a17f748cb3ad6fa0_540x304.jpg",
-      "url": "https://v.zhibo.tv/detail/headerline/1272924.html",
       "display_tag": "资讯",
       "priority": 3
     }
