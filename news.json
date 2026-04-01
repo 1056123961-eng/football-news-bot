@@ -1,7 +1,18 @@
 {
-  "last_updated": "2026-04-01 10:33:04",
+  "last_updated": "2026-04-01 11:45:46",
   "count": 8,
   "data": [
+    {
+      "id": "62c2b4dd718dd6d857d6102ac1a03021",
+      "ctime": "2026-04-01 19:00",
+      "title": "哈桑・怀特塞德当选2025-2026赛季CBA联赛卡特彼勒月度最佳防守球员（第24–32轮）",
+      "description": "",
+      "source": "中国体育",
+      "picUrl": "https://file02.zhibo.tv/uploads/imgs/2026/04-01/11ab851d11efa5dbb61197ad3acf9606_540x304.jpg",
+      "url": "https://v.zhibo.tv/detail/headerline/1273096.html",
+      "display_tag": "资讯",
+      "priority": 3
+    },
     {
       "id": "938d050a441bb03218e8026dead81f19",
       "ctime": "2026-03-31 18:00",
@@ -76,17 +87,6 @@
       "source": "中国体育",
       "picUrl": "https://file02.zhibo.tv/uploads/imgs/2026/03-31/176dd5c30cac7b67e4f457dea4e6403c_540x304.jpg",
       "url": "https://v.zhibo.tv/detail/headerline/1273091.html",
-      "display_tag": "资讯",
-      "priority": 3
-    },
-    {
-      "id": "e1bf15f9c8c4424596c5d27ee5ff5878",
-      "ctime": "2026-03-31 17:00",
-      "title": "0比2负于喀麦隆队 国足输球亦有收获",
-      "description": "",
-      "source": "中国体育",
-      "picUrl": "https://file02.zhibo.tv/uploads/imgs/2026/03-31/6ca452fe7c59ad0e3400e05028bb7af3_540x304.jpg",
-      "url": "https://v.zhibo.tv/detail/headerline/1273092.html",
       "display_tag": "资讯",
       "priority": 3
     }
