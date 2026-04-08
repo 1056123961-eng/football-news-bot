@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-08 04:32:14",
-  "count": 8,
+  "last_updated": "2026-04-08 06:17:53",
+  "count": 6,
   "data": [
     {
       "id": "456dda99cde19ee9bb5bdc21c523a015",
@@ -65,28 +65,6 @@
       "source": "中国体育",
       "picUrl": "https://file02.zhibo.tv/uploads/imgs/2026/04-08/14d632a123cfa10bf41ed03b10ee111a_540x304.jpg",
       "url": "https://v.zhibo.tv/detail/headerline/1273143.html",
-      "display_tag": "资讯",
-      "priority": 3
-    },
-    {
-      "id": "6d4868bb2f0ca021505e584654f39fdc",
-      "ctime": "2026-04-07 18:00",
-      "title": "步手枪世界杯新赛季有新意",
-      "description": "",
-      "source": "中国体育",
-      "picUrl": "https://file02.zhibo.tv/uploads/imgs/2026/04-07/1ec63da50612c24249b6cbeb9d345adb_540x304.jpg",
-      "url": "https://v.zhibo.tv/detail/headerline/1273131.html",
-      "display_tag": "资讯",
-      "priority": 3
-    },
-    {
-      "id": "dd908aceb2cf985381a9c33b6461a3f2",
-      "ctime": "2026-04-07 18:00",
-      "title": "世界青少年击剑锦标赛前半程 中国小将发挥出色",
-      "description": "",
-      "source": "中国体育",
-      "picUrl": "https://file02.zhibo.tv/uploads/imgs/2026/04-07/1a82924f81ffb6214005e514c9f90180_540x304.jpg",
-      "url": "https://v.zhibo.tv/detail/headerline/1273132.html",
       "display_tag": "资讯",
       "priority": 3
     }
