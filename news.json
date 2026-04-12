@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-12 15:57:21",
-  "count": 8,
+  "last_updated": "2026-04-12 16:38:09",
+  "count": 7,
   "data": [
     {
       "id": "9a85930ea648f5d1198e0594532d6a79",
@@ -76,17 +76,6 @@
       "source": "中国体育",
       "picUrl": "https://file02.zhibo.tv/uploads/imgs/2026/04-10/3a70e31ba94566e66ccb9d8f5a1a3aa6_540x304.jpg",
       "url": "https://v.zhibo.tv/detail/headerline/1273161.html",
-      "display_tag": "资讯",
-      "priority": 3
-    },
-    {
-      "id": "b5fc3debb00a1f59590806740f39c91f",
-      "ctime": "2026-04-09 15:00",
-      "title": "亚锦赛首轮战罢 国羽15组选手晋级16强",
-      "description": "",
-      "source": "中国体育",
-      "picUrl": "https://file02.zhibo.tv/uploads/imgs/2026/04-09/eec56f2e7445277711e90b853d1ac611_540x304.jpg",
-      "url": "https://v.zhibo.tv/detail/headerline/1273150.html",
       "display_tag": "资讯",
       "priority": 3
     }
