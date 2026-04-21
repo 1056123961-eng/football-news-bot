@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-21 10:02:16",
-  "count": 9,
+  "last_updated": "2026-04-21 11:37:00",
+  "count": 8,
   "data": [
     {
       "id": "c1dbfaf9dad3cf4c20fbc74ef0d15a79",
@@ -87,17 +87,6 @@
       "source": "中国体育",
       "picUrl": "https://file02.zhibo.tv/uploads/imgs/2026/04-20/6196cf6cc99a59541b957f7ddc99de0a_540x304.jpg",
       "url": "https://v.zhibo.tv/detail/headerline/1273221.html",
-      "display_tag": "资讯",
-      "priority": 3
-    },
-    {
-      "id": "8ea47428d4bc325c95bc7838687cbb38",
-      "ctime": "2026-04-20 15:00",
-      "title": "中超第6轮战罢 新兴势力连胜不停 传统强队波澜不惊",
-      "description": "",
-      "source": "中国体育",
-      "picUrl": "https://file02.zhibo.tv/uploads/imgs/2026/04-20/8f489ff001c3de78a0fcda59ce1c5974_540x304.jpg",
-      "url": "https://v.zhibo.tv/detail/headerline/1273222.html",
       "display_tag": "资讯",
       "priority": 3
     }
