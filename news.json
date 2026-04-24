@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-24 07:15:30",
-  "count": 7,
+  "last_updated": "2026-04-24 09:14:55",
+  "count": 6,
   "data": [
     {
       "id": "60e07ec7311cf871cbfa72043a7a1fb4",
@@ -65,17 +65,6 @@
       "source": "中国体育",
       "picUrl": "https://file02.zhibo.tv/uploads/imgs/2026/04-23/ebe9ea5e5b71923db912348e6a69ad57_540x304.jpg",
       "url": "https://v.zhibo.tv/detail/headerline/1273235.html",
-      "display_tag": "资讯",
-      "priority": 3
-    },
-    {
-      "id": "1c1bfca42b8ed56eeca1a4b16d8ad914",
-      "ctime": "2026-04-23 15:00",
-      "title": "全国男子举重锦标赛第二日 程俊、彭政林夺冠",
-      "description": "",
-      "source": "中国体育",
-      "picUrl": "https://file02.zhibo.tv/uploads/imgs/2026/04-23/9d221b4bae1e7b1c474852e7a165a0c2_540x304.jpg",
-      "url": "https://v.zhibo.tv/detail/headerline/1273237.html",
       "display_tag": "资讯",
       "priority": 3
     }
