@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-06-04 01:44:24",
-  "count": 9,
+  "last_updated": "2026-06-04 06:36:43",
+  "count": 8,
   "data": [
     {
       "id": "b7b8e07f2eba2604fd5b5e0e25c069ac",
@@ -87,17 +87,6 @@
       "source": "中国体育",
       "picUrl": "https://file02.zhibo.tv/uploads/imgs/2026/06-02/9eb9fc2c1b410de25ff4947718b42e54_540x304.jpg",
       "url": "https://v.zhibo.tv/detail/headerline/1273500.html",
-      "display_tag": "资讯",
-      "priority": 3
-    },
-    {
-      "id": "52562b91bffe4bf5212285e58c1a68a4",
-      "ctime": "2026-06-02 16:00",
-      "title": "为亚运会世锦赛练兵 中国体操队全力备战亚锦赛亚青赛",
-      "description": "",
-      "source": "中国体育",
-      "picUrl": "https://file02.zhibo.tv/uploads/imgs/2026/06-02/b421a4201330f74c63108a3c0a1bc8e1_540x304.jpg",
-      "url": "https://v.zhibo.tv/detail/headerline/1273501.html",
       "display_tag": "资讯",
       "priority": 3
     }
