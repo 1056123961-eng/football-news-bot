@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-06-10 07:02:50",
-  "count": 8,
+  "last_updated": "2026-06-10 11:06:52",
+  "count": 7,
   "data": [
     {
       "id": "f0fe1ee2e7350b62196517653fb399ff",
@@ -76,17 +76,6 @@
       "source": "中国体育",
       "picUrl": "https://file02.zhibo.tv/uploads/imgs/2026/06-03/5a040e3bd3453ed93a0b1bf20f4e32eb_1040x693.jpeg",
       "url": "https://v.zhibo.tv/detail/headerline/1273507.html",
-      "display_tag": "资讯",
-      "priority": 3
-    },
-    {
-      "id": "a4e618a6de8fe0384808112bc7465d7d",
-      "ctime": "2026-06-03 16:00",
-      "title": "世界女排联赛南京站今日打响 中国女排着意锤炼年轻队员",
-      "description": "",
-      "source": "中国体育",
-      "picUrl": "https://file02.zhibo.tv/uploads/imgs/2026/06-03/3f3547c758027e897857c0377fc6b35d_540x304.jpg",
-      "url": "https://v.zhibo.tv/detail/headerline/1273504.html",
       "display_tag": "资讯",
       "priority": 3
     }
