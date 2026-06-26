@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-06-26 02:42:17",
-  "count": 7,
+  "last_updated": "2026-06-26 06:48:32",
+  "count": 6,
   "data": [
     {
       "id": "7063d6813873d3524f20bc1869bd7a95",
@@ -65,17 +65,6 @@
       "source": "中国体育",
       "picUrl": "https://file02.zhibo.tv/uploads/imgs/2026/06-24/02fcbec0079760bfec769605687de485_540x304.jpg",
       "url": "https://v.zhibo.tv/detail/headerline/1273630.html",
-      "display_tag": "资讯",
-      "priority": 3
-    },
-    {
-      "id": "dda9f19cc53ce67976df8a916224f875",
-      "ctime": "2026-06-24 13:00",
-      "title": "击剑亚锦赛中国女佩摘铜",
-      "description": "",
-      "source": "中国体育",
-      "picUrl": "https://file02.zhibo.tv/uploads/imgs/2026/06-24/9fc1913faa4c233e4d8afab14591765a_540x304.jpg",
-      "url": "https://v.zhibo.tv/detail/headerline/1273627.html",
       "display_tag": "资讯",
       "priority": 3
     }
