@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-08-12 06:51:19",
-  "count": 9,
+  "last_updated": "2026-08-12 08:10:26",
+  "count": 8,
   "data": [
     {
       "id": "71bcdf9b92040f0ad0d186a5874898a4",
@@ -87,17 +87,6 @@
       "source": "中国体育",
       "picUrl": "https://file02.zhibo.tv/uploads/imgs/2026/08-12/cf0ccdfa694c06e4ed3f2d5444591f41_540x360.jpg",
       "url": "https://v.zhibo.tv/detail/headerline/1273835.html",
-      "display_tag": "资讯",
-      "priority": 3
-    },
-    {
-      "id": "e754ff8e9d88780378f0ab5aad93719d",
-      "ctime": "2026-08-12 01:00",
-      "title": "男排亚锦赛分组揭晓 中国与伊朗印度新西兰同组",
-      "description": "",
-      "source": "中国体育",
-      "picUrl": "https://file02.zhibo.tv/uploads/imgs/2026/08-12/c4eeca83a258b474cb3a04fe54c037a3_540x360.jpg",
-      "url": "https://v.zhibo.tv/detail/headerline/1273836.html",
       "display_tag": "资讯",
       "priority": 3
     }
