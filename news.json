@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-08-13 01:18:49",
-  "count": 7,
+  "last_updated": "2026-08-13 03:37:24",
+  "count": 6,
   "data": [
     {
       "id": "e829325c7cfe3585a7eb4425990f556c",
@@ -65,17 +65,6 @@
       "source": "中国体育",
       "picUrl": "https://file02.zhibo.tv/uploads/imgs/2026/08-12/eefe784177e141522828f98e2519588a_540x360.jpg",
       "url": "https://v.zhibo.tv/detail/headerline/1273828.html",
-      "display_tag": "资讯",
-      "priority": 3
-    },
-    {
-      "id": "9c20f6905f2445267002b15659b50a0b",
-      "ctime": "2026-08-12 01:00",
-      "title": "田径世青赛中国队已获两金一银两铜",
-      "description": "",
-      "source": "中国体育",
-      "picUrl": "https://file02.zhibo.tv/uploads/imgs/2026/08-12/e5b09b03e49586decf6cd17b8bf17ef0_540x360.jpg",
-      "url": "https://v.zhibo.tv/detail/headerline/1273829.html",
       "display_tag": "资讯",
       "priority": 3
     }
