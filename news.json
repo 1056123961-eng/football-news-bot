@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-09-18 09:57:57",
-  "count": 8,
+  "last_updated": "2026-09-18 14:07:49",
+  "count": 7,
   "data": [
     {
       "id": "1557bf1b6c102467138d5fde924209f8",
@@ -76,17 +76,6 @@
       "source": "中国体育",
       "picUrl": "https://file02.zhibo.tv/uploads/imgs/2026/09-17/2eefd29cccc69a3efe9faa8daab71c30_540x360.png",
       "url": "https://v.zhibo.tv/detail/headerline/1273991.html",
-      "display_tag": "资讯",
-      "priority": 3
-    },
-    {
-      "id": "230dd8ba5a45ef26a4b91da00a668661",
-      "ctime": "2026-09-17 14:00",
-      "title": "中国男篮击败沙特队晋级半决赛",
-      "description": "",
-      "source": "中国体育",
-      "picUrl": "https://file02.zhibo.tv/uploads/imgs/2026/09-17/828933715b9e9550ed532b0cabb496b6_540x360.png",
-      "url": "https://v.zhibo.tv/detail/headerline/1273992.html",
       "display_tag": "资讯",
       "priority": 3
     }
